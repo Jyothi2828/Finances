@@ -1,0 +1,220 @@
+/* Forms.css - Styles for all form components */
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 20px 0;
+  min-height: 600px;
+}
+
+/* Form Section - Left side */
+.form-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.form-description {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.25);
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-preview {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-preview:hover {
+  background-color: #5a6268;
+}
+
+.btn-submit {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #3a80d2;
+}
+
+.btn-toggle-chart {
+  background-color: #6c757d;
+  color: white;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.btn-toggle-chart:hover {
+  background-color: #5a6268;
+}
+
+/* Chart Section - Right side */
+.chart-section {
+  flex: 1.5;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chart-container {
+  position: relative;
+  height: 350px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.chart-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.example {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 15px;
+  background-color: #f0f4f8;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.result-summary {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.result-summary h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.result-summary p {
+  margin: 8px 0;
+}
+
+.positive {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.negative {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+  }
+  
+  .form-section {
+    max-width: 100%;
+  }
+  
+  .chart-container {
+    height: 400px;
+  }
+}
+
+/* Data Entry Section in Dashboard */
+.data-entry-section .form-navigation {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.data-entry-section .form-navigation button {
+  background-color: transparent;
+  color: #495057;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 3px solid transparent;
+}
+
+.data-entry-section .form-navigation button.active {
+  color: #4a90e2;
+  border-bottom: 3px solid #4a90e2;
+}
+
+.data-entry-section .form-content {
+  padding: 10px 0;
+}

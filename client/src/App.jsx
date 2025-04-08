@@ -11,7 +11,7 @@ const isAuthenticated = () => {
 
 // Get the base URL for GitHub Pages deployment
 const getBasename = () => {
-  return process.env.NODE_ENV === 'production' ? '/BizBuddyFinance' : '';
+  return '';
 };
 
 // PrivateRoute component for protected routes
@@ -27,7 +27,7 @@ const PrivateRoute = ({ children }) => {
 
 function App() {
   return (
-    <Router basename={getBasename()}>
+    <Router>
       <div className="App">
         <Routes>
           <Route path="/login" element={<Login />} />

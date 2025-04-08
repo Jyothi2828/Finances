@@ -4,8 +4,8 @@ const config = {
     apiUrl: 'http://localhost:5000/api',
   },
   production: {
-    // You'll need to update this with your actual backend URL once deployed
-    apiUrl: 'https://bizbuddy-finance-backend.onrender.com/api',
+    // Updated with your actual deployed backend URL
+    apiUrl: 'https://finances-bb04.onrender.com',
   }
 };
 

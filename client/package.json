@@ -1,7 +1,7 @@
 {
   "name": "financial-statistics-client",
   "version": "0.1.0",
-  "homepage": "https://jyothi2828.github.io/BizBuddyFinance",
+"homepage": "/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

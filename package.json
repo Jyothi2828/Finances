@@ -2,21 +2,24 @@
   "name": "bizbuddy-finance",
   "version": "1.0.0",
   "description": "BizBuddy Finance Application",
-  "main": "index.js",
+  "homepage": "https://Jyothi2828.github.io/Finances",
   "scripts": {
     "client": "cd client && npm run start",
     "server": "cd server && npm run start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    "predeploy": "cd client && npm run build",
+     "deploy": "gh-pages -d client/build",
+     "install-all": "npm install && cd client && npm install && cd ../server && npm install"
   },
   "keywords": [
     "finance",
     "business",
     "dashboard"
   ],
-  "author": "",
+  "author": "Jyothi Prasanna",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.3.0"
   }
 }
